@@ -50,9 +50,11 @@ There are 3 titled scenarios in the [feature file](cucumber-java-selenium/src/te
 
 Please complete the scenarios to cover the requirements. Feel free to rework/create step definitions, rework/create Page Object Models as you deem appropriate.
 
+Please submit your own code, NOT AI generated solutions to the problem.
+
 ### Requirement for Scenario: Homepage has a list of links to Expected examples
 
-Ensure the displayed list of listed examples is as expected. The expected list should contain 
+Ensure the displayed list of listed examples is as expected. The expected list should contain only the following
 
 ```
 A/B Testing
