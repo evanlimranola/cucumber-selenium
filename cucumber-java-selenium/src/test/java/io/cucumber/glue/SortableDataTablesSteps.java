@@ -36,7 +36,9 @@ public class SortableDataTablesSteps extends Context {
         List<String> validationErrors = new ArrayList<>();
 
         if (expectedData.size() != actualData.size()) {
-            sortableDataTablesPage.verifyRowCountMatches(expectedData.size(), actualData.size());
+            validationErrors.add(String.format("Row Count Mismatch -> Expected %d rows, Actual: %d rows",
+                    expectedData.size(), actualData.size()));
+//            sortableDataTablesPage.verifyRowCountMatches(expectedData.size(), actualData.size());
         }
 
         int rowsToCompare = Math.min(expectedData.size(), actualData.size());

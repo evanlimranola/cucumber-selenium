@@ -46,7 +46,6 @@ public class HomeSteps extends Context {
     List<String> extraExamples = new ArrayList<>(availableExamples);
     extraExamples.removeAll(expectedExamples);
 
-
     Assertions.assertTrue(missingExamples.isEmpty(),
             "Failed! Missing available examples than expected." + missingExamples);
 
