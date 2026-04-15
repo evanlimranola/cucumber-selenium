@@ -61,12 +61,10 @@ public class SortableDataTablesSteps extends Context {
         }
 
         if (!validationErrors.isEmpty()) {
-            // Join all the errors with a new line for a clean console output
             String finalErrorMessage = "\n--- TABLE VALIDATION FAILED ---\n" +
                     String.join("\n", validationErrors) +
                     "\n-------------------------------\n";
 
-            // Fail the test and print the beautifully formatted report
             Assertions.fail(finalErrorMessage);
         }
     }

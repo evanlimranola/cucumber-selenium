@@ -10,6 +10,5 @@ import org.junit.platform.suite.api.*;
 @SelectPackages("io.cucumber.features")
 @ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "io.cucumber")
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, html:target/cucumber-report/cucumber.html")
-@IncludeTags("TEST_TI_0003")
 public class RunCucumberTest {
 }
